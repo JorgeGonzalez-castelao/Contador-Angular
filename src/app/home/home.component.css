@@ -1,0 +1,53 @@
+/* contador.component.css */
+
+/* Estilos para el contenedor del contador */
+.contador-container {
+  display: flex;
+  justify-content: space-around; /* Ajusta el espacio entre los elementos */
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor de los botones */
+.botones-container {
+  border: 2px solid #007bff; /* Añade un borde estilizado */
+  border-radius: 10px; /* Redondea las esquinas */
+  overflow: hidden; /* Evita que los botones sobrepasen el borde */
+  padding: 5px; /* Añade espacio entre el borde y los botones */
+}
+
+/* Estilos para los botones */
+.contador-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0; /* Quita el borde redondeado de los botones internos */
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos cuando se pasa el ratón sobre los botones */
+.contador-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el valor del contador */
+.contador-value {
+  font-size: 24px;
+  margin: 0 10px; /* Añade margen entre el valor del contador y los botones */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .contador-container {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en dispositivos móviles */
+  }
+
+  .contador-button {
+    margin-top: 10px; /* Agrega espacio entre los botones en dispositivos móviles */
+  }
+}
+
